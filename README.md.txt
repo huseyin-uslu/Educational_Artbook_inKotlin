@@ -1,1 +1,0 @@
-##the project I did while I was learning kotlin was designed completely by me.
