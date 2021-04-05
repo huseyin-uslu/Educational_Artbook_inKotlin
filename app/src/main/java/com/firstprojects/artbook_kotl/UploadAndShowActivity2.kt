@@ -234,6 +234,7 @@ class UploadAndShowActivity2 : AppCompatActivity() {
 
     }
 
+    //Catching the user going to the gallery
    override fun onPause() {
         super.onPause()
         if(sharedPreferences.getBoolean("actalive",false)) {
@@ -242,7 +243,7 @@ class UploadAndShowActivity2 : AppCompatActivity() {
             finish()
       sharedPreferences.edit().putBoolean("actalive",false).apply()
         }else {
-            Toast.makeText(this@UploadAndShowActivity2,"you're choosing a image for uploading...!",Toast.LENGTH_LONG).show()
+            Toast.makeText(this@UploadAndShowActivity2,"you're choosing an image for uploading...!",Toast.LENGTH_LONG).show()
         }
     }
 }
